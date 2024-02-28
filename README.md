@@ -1,6 +1,6 @@
-# SDK для работы с TON API для получения текущей цены токенов
+# Python library for working with the TON API to retrieve current token prices.
 
-## Установка
+## Installation
 
 ```shell
 pip install jettonpriceapi
@@ -21,20 +21,21 @@ from jettonpriceapi import *
 api = Jettonapi(testnet=True)
 ```
 
-## Методы
+## Methods
 
 ### get_status
-Стостояние TON API
+Getting the current status of the TON API
 Пример:
 ```python
 api.get_status()
 ```
 
 ### get_price
-| Параметр | Информация |
+Getting the current token price or TON price
+| Parameter | Information |
 |---------|-------------|
-| tokens | Токен или же TON |
-| currencies | Фиат или же TON |
+| tokens | Token or TON |
+| currencies | Fiat or TON |
 
 Пример:
 ```python
@@ -43,11 +44,12 @@ print(price)
 ```
 
 ### get_diff
-| Параметр | Информация |
+Getting the change in token price or TON price
+| Parameter | Information |
 |---------|-------------|
-| tokens | Токен или же TON |
-| diff | 24h 7d 30d |
-| currencies | Фиат или же TON |
+| tokens | Token or TON |
+| diff | 24h, 7d, 30d |
+| currencies | Fiat or TON |
 
 Пример:
 ```python
